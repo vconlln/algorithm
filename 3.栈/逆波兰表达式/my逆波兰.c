@@ -121,7 +121,7 @@ void calculate(char * string){
 
 int main(){
     char str[MAXSIZE] = "3*4*((5+2)*5+5*3)";
-    printf("中缀为表达式：")
+    printf("中缀为表达式：");
     //scanf("%s",str);
     printf("后缀为表达式：");
     toNBL(str);
