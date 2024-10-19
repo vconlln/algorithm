@@ -218,17 +218,6 @@ void delete(Node *list, int i){
     }
 }
 
-//找到被删除结点的前驱，再进行删除
-void delete(Node *list, int i){
-    Node *p = Get(list,i-1);  //被删除结点的前驱结点的地址
-    if(p!=NULL&& p->next!=NULL){
-        Node *q = p->next;  //q是被删除结点，p的next指向被删除结点
-        DataType e = q->value;
-        p->next = q->next;
-        free(q);
-    }
-}
-
 int main(){
     Node * head_link = Initlink();    //带头结点
     Head_Insert(10,head_link);
